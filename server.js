@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const api = require('../server/routes/api')
+const api = require('./server/routes/api')
 const app = express()
 const PORT = 8080
 
