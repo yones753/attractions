@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const api = require('../server/routes/api')
 const app = express()
 const PORT = 8080
-const sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL);
+// const sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL);
 
 
 //process.env.MONGODB_URI || 
