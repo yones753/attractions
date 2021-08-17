@@ -1,0 +1,32 @@
+.home{
+    font-size: 19px;
+    font-weight: bold;
+    min-height: 639px;
+}  
+
+.btnsHome{
+    font-size: medium;
+    color:#ff7100; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #ff7100; 
+}
+
+.img-attractions{
+    width: 345px;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin: auto;
+    background-color: white;
+}
+
+.lat-long{
+    color: #ff7100;   
+}
+
+.location{
+    font-size: 15px;
+}
+
+
+

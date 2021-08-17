@@ -1,5 +1,23 @@
 .App {
-  text-align: center;
+  position: relative;
+  direction: rtl; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction :column
+}
+
+.Header{
+  position: absolute;
+}
+.Footer{
+  position: absolute;
+  bottom: 0px;
+}
+
+.title{
+ text-align: center;
+ background-color: #ff7100
 }
 
 .App-logo {
@@ -35,4 +53,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer{
+  font-size: small;
+  background-color: #363636;
+  bottom: 0;
+}
+
+.icons{
+  color:white
 }

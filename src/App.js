@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Home from './components/Home/Home'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Attractions from './components/Attractions/Attractions'
 import './App.css';
 
 function App() {
+  const userCoordinates ={ latitude: parseFloat(localStorage.getItem("latitude")), longitude: parseFloat(localStorage.getItem("longitude")) }
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Route exact path="/" render={() => <Home userCoordinates={userCoordinates} /> } />
+        <Route exact path="/attractions" render={() => <Attractions userCoordinates={userCoordinates} />} />
+        <Footer />
+      </div>
+    </Router>
+
   );
 }
 
 export default App;
+

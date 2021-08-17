@@ -1,0 +1,67 @@
+.attraction{
+    position: relative;
+    width: 100%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    height: auto;
+    background-color: #fdf9c5;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+.attraction:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+a{
+    text-decoration: none;
+    color:  #ff7100; 
+    text-decoration: none;
+}
+
+.iconLike{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 25px;
+    height: 25px;
+}
+
+#circle{
+    position: absolute;
+    border: solid 1px #ff7100; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+}
+
+.popUpHours{
+    direction: rtl;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    color: white;
+    margin: 5px;
+    padding-bottom: 10px;
+    background-color: #ff7100; 
+}
+
+.btnColse{
+    color: white;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+}
+
+.btnHours{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: orange;
+    font-size: 14px;
+}
+
+.names{
+    color: tomato;
+    font-size: 12px;
+}
