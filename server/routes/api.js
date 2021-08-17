@@ -15,6 +15,7 @@ router.get('/attraction', async (req, res) => {
         })
         res.status(200).send(result.filter(t => t.distance <= maxRadius).sort((a, b) => a.distance - b.distance))
     } catch (error) {
+        console.log("AAAA=================" ,error );
         res.status(500).send({ "msg": "תנסה שוב !", "code": 500 })
     }
 })
