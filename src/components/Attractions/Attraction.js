@@ -48,7 +48,7 @@ function Attraction(props) {
         </Row>
       </Popup>
 
-      <Container className="attraction mt-2 mb-2 text-center p-auto">
+      <Container key={attraction_id} className="attraction mt-2 mb-2 text-center p-auto">
         <Col ><div id="circle" onClick={changeLike}>{(status) ? <FcLike className="iconLike" /> : <FcLikePlaceholder className="iconLike" />}</div></Col>
         <Row className="m-2 pt-3 pb-3">
           <Col xs={6} md={2} lg={1}>{attraction_id}<br /><span className="names">מזהה</span></Col>

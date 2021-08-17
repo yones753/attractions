@@ -27,7 +27,7 @@ function Attractions(props) {
           timer: 1500
         })
       })
-  }, [])
+  }, [attractionsByCategory])
 
   useEffect(() => {
     const attractinsBtn = [...new Set(getBtnName())]
@@ -54,7 +54,6 @@ function Attractions(props) {
       <Container className="mt-3">
         <hr />
         {attractionsByCategory.map(a => { return <Attraction key={a._id} attraction={a} /> })}
-
       </Container>
     </div>
   )
