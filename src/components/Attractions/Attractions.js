@@ -27,7 +27,7 @@ function Attractions(props) {
           timer: 1500
         })
       })
-  }, [attractionsByCategory])
+  }, [])
 
   useEffect(() => {
     const attractinsBtn = [...new Set(getBtnName())]
